@@ -1,0 +1,18 @@
+
+%nav{:class => "index-nav"}
+  .container
+    %navbar-brand
+    %h{:class => "nav-header"} Exams-for-Geeks
+    
+    = link_to "Sign Up",  new_model_registration_path, :class=> "sign"
+    = link_to "Sign In", new_model_session_path, :class=> "sign"
+    
+#myModal.modal.fade.bs-modal-sm{"aria-hidden" => "true", "aria-labelledby" => "mySmallModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog.modal-md
+    .modal-content
+      %br
+        .modal-body
+          #myTabContent.tab-content
+        .modal-footer
+
+
