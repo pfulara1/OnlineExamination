@@ -13,4 +13,6 @@
   		  
 We implemented cucumber test for the system.
 
+To clone the repository use : git clone https://github.com/pfulara1/OnlineExamination.git
+
 
