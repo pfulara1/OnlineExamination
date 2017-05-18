@@ -59,6 +59,7 @@ Then I should be on the home page
 And I follow "General Quiz"
 And I choose true
 And I press "Submit Quiz"
+Then page should have text "You Have Scored"
 Then I follow "Home"
 
 
