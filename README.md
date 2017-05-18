@@ -15,4 +15,14 @@ We implemented cucumber test for the system.
 
 To clone the repository use : git clone https://github.com/pfulara1/OnlineExamination.git
 
+To install all required gems please use: bundle install
+
+To migrate the database use: rake db:migrate
+
+To run the test migration use: rake db:migrate RAILS_ENV=test
+
+
+
+
+
 
