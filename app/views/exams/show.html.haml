@@ -2,5 +2,16 @@
   %div{:class => 'intro'}
     %h1= @exam.name
     %h2= @exam.description
+  %div
+    =form_tag exam_submit_path,method: :post do 
+      =hidden_field_tag :exam_id,@exam.id
+      -@questions.each do |q|
+        %h3=q.content
+        %br
+        -q.options.split("\r\n").compact.each do |o|
+          =radio_button_tag q.id, o
+          =label_tag "#{q.id}_#{o}", o
+          %br
+      =submit_tag 'Submit Quiz'  
 %hr/
 %br/

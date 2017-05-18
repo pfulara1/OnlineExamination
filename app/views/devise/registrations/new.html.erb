@@ -20,9 +20,9 @@
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
-
     <div class="field">
-    <%= f.label Teacher/Student %><br />
+    <%= f.label "Teacher user?" %>
+    <input checked="unchecked" type="checkbox" id="post_validated" name="f[usertype]" value="f[usertype]" />
   </div>
   <div class="actions">
     <%= f.submit "Sign up" %>

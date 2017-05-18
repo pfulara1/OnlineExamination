@@ -1,5 +1,10 @@
 .row
   %div{:class => 'intro'}
     %h1 Create New Exam
+  %div
+    =form_tag exams_path, method: :post  do 
+      =text_field_tag :name,'',placeholder: 'Enter Exam Name'
+      =text_field_tag :description,'',placeholder: 'Enter Exam Description'
+      =submit_tag 'Create Exam'
 %hr/
 %br/

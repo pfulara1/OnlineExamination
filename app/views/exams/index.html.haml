@@ -8,11 +8,12 @@
       %th.col-md-8 List of Exams
       %th.col-md-2
   %tbody
-    - @exams.each do |exam|
+    -@exams.each do |exam|
       %tr
-        %td= link_to exam.name, exam_path(exam.id)
-        %td= exam.description
-        %td= link_to "Edit", edit_exam_path(exam.id)
-        %td= link_to("Delete", exam_path(exam),  :method => :delete)
-%p= link_to "Create Exam", new_exam_path
+        %td= link_to exam.name, exam_path(exam.id), :class => "exam"
+        %td= link_to("Delete",  exam_path(exam.id), :method => :delete, :class => "edit-delete")
+
+
+%p= link_to "Create Exam", new_exam_path,:class => "exam1"
+%p= link_to "Create New Question ", new_question_path,:class => "exam1"
 %br/

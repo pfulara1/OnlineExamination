@@ -8,9 +8,13 @@
 
     = csrf_meta_tags
   %body
+    -if flash[:notice]
+    -elsif flash[:warning]
     = render 'layouts/navbar'
     .container{:class=> "body-container"}
       - if alert
         %p.alert= alert
+      // -notice.each do |key, value|
+      //   %p.alert=value
       = yield
     = render 'layouts/footer'

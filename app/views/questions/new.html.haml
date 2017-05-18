@@ -1,0 +1,16 @@
+.row
+  %div{:class => 'intro'}
+    %h1 Create New Question
+  %div
+    =form_tag questions_path, method: :post  do 
+      =text_field_tag :content,'',placeholder: 'Enter Question'
+      =text_field_tag :option1,'',placeholder: 'Option 1'
+      =text_field_tag :option2,'',placeholder: 'Option 2'
+      =text_field_tag :option3,'',placeholder: 'Option 3'
+      =text_field_tag :option4,'',placeholder: 'Option 4'
+      =text_field_tag :answer,'',placeholder: 'Answer'
+      =select_tag :exam_id, options_from_collection_for_select(@exams, 'id', 'name'),prompt: 'Select Exam Name'
+      =submit_tag 'Add Question To Exam'
+      %p= link_to "Home", exams_url,:class => "exam1"
+%hr/
+%br/
