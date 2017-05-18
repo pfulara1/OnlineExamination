@@ -1,7 +1,11 @@
 Feature: Sign Up in Online Examination System
-As a viewer
-I want to sign up
-So that I can take or set exams
+As a User
+So that I can register and create account
+I want to create a registration page
+
+As an Admin User
+So that I can register and create account
+I want to create a registration page
 
 Scenario: Sign Up Page
 Given I am on the sign up page

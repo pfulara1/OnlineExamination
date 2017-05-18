@@ -1,7 +1,7 @@
 Feature: View About Online Examination System
-As a viewer
-I want to see home page
-So that I can see information about exams
+As a User
+So that I can view information on the site to see what it offers
+I want to see details on homepage and provide way to sign up or log in to account
 
 Scenario: Homepage
 Given I am on the home page

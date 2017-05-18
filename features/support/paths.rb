@@ -31,6 +31,8 @@ module NavigationHelpers
     when /^the new exam page$/
      '/exams/new'
    
+   when /^the questions page$/
+     '/questions/new'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

@@ -1,7 +1,11 @@
 Feature: Log in to Online Examination System
-As a viewer
-I want to log in
-So that I can take or set exams
+As a User
+So that I can login to take Exam
+I want to create a login page for user
+
+As an Admin User
+So that I can set questions for the quiz
+I want to create a login page for Admin user
 
 Background: Users have been created
 Given I am on the sign up page
