@@ -140,8 +140,6 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.20.0)
-    postgres (0.8.1)
-      pg (~> 0)
     rack (1.6.5)
     rack-pjax (1.0.0)
       nokogiri (~> 1.5)
@@ -271,7 +269,7 @@ DEPENDENCIES
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
-  postgres
+  pg
   rails (= 4.2.6)
   rails_admin (~> 1.1.1)
   rspec-rails (= 3.4.2)
@@ -285,4 +283,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.14.4
+   1.14.6
