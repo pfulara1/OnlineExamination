@@ -1,13 +1,4 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-
  Online Examination System implemented using ruby on rails.
   		  
  This application provides an interface to stakeholders i.e. students who will take an exam and teachers who will give an exam.
@@ -21,3 +12,5 @@
   Students will take up an exam and will be displayed the result at the end of exam.
   		  
 We implemented cucumber test for the system.
+
+
