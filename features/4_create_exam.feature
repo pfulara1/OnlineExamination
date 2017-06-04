@@ -46,8 +46,7 @@ When I follow "Create New Question"
 And I fill in "content" with "A flea can jump more than 200 times its height."
 And I fill in "option1" with "True"
 And I fill in "option2" with "False"
-#And I choose from drop down
-And I choose "General Quiz" from drop down "exam_id"
+And I choose "Test 1" from drop down "exam_id"
 And I press "Add Question To Exam"
 Then I should be on the questions page
 And I follow "Log Out"
@@ -56,11 +55,7 @@ When I fill in "model[email]" with "user@testing.com"
 When I fill in "model[password]" with "testing123"
 And I press "Log in"
 Then I should be on the home page
-And I follow "General Quiz"
+And I follow "Test 1"
 And I choose true
 And I press "Submit Quiz"
-Then page should have text "You Have Scored"
 Then I follow "Home"
-
-
-
