@@ -28,11 +28,11 @@ class ExamsController < ApplicationController
   # POST /exams
   # POST /exams.json
   def create
-    @exam = Exam.new()
-    @exam.name = params[:name]
-    @exam.name = params[:description]
-    @exam.save!
-    flash[:notice] = "#{@exam.name} was successfully created."
+    @exam=Exam.create!(exam_params)  
+    # @exam = Exam.new()
+    # @exam.name = params[:name]
+    # @exam.description = params[:description]
+    # @exam.save!
     redirect_to(exams_path)
   end
  
@@ -43,7 +43,7 @@ class ExamsController < ApplicationController
   end
   
   def submit_exam
-    @exam = Exam.find(params[:exam_id])
+    @exam = Exam.find(params[:id])
     all_questions = @exam.questions.to_a.as_json
     @score = 0
     all_questions.each do |q_hash|
@@ -61,13 +61,7 @@ class ExamsController < ApplicationController
   end  
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    #def set_exam
-    #  @exam = Exam.find(params[:id])
-    #end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    # def exam_params
-    #   params.require(:exam).permit(:name,:description)
-    # end
+    def exam_params
+      params.require(:exam).permit(:name , :description)
+    end
 end
